@@ -7,4 +7,7 @@
 
 def handtodice(hand):
 	# your code goes here
-	pass
+	first = hand//100
+	middle = (hand%100)//10
+	last = hand%10
+	return first, middle, last
