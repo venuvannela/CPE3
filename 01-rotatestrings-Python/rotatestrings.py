@@ -5,7 +5,14 @@
 # assert(rotateString('abcd', -1) == 'dabc')
 
 
-
 def fun_rotatestrings(s, n):
-	return s
+    #enters when n>0
 
+    if n>=0:
+        n = n%len(s)
+        s = s[n:] + s[:n]
+        return s
+    else:
+        n=abs(n)%len(s)
+        s = s[len(s)-n:]+s[:len(s)-n] 
+        return s
