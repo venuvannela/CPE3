@@ -5,4 +5,14 @@
 
 def canqueenattack(qR, qC, oR, oC):
 	# Your code goes here
-	pass
+	if qR==oR or qC==oC or (abs(qR-oR)==abs(qC-oC)):
+		return True
+	
+	# else:
+	# 	for i in range (max(qR,qC,oR,oC)):
+	# 		for j in range(max(qR,qC,oR,oC)):
+	# 			if (oR==qR+i or oR==qR-i) and (oC==qC+i or oC==qC-i):
+	# 				return True
+	
+
+	return False
